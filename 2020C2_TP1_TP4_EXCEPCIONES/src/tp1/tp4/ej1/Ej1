@@ -1,0 +1,11 @@
+En el main si se ingresa un dato no numérico el programa informa el error y se inicializa la variable en o
+En el caso  rutina de carga de números (pedirNumeroEntero) si se ingresa un dato no numérico el programa informa el error 
+y se pide ingresar un número correcto. El ciclo se repite hasta ingresar un valor válido.
+Al comentar los try-catch en caso de ingresar un dato no numérico se genera una excepción y el programa finaliza su ejecución.
+
+- Main:
+ 1° error --> java.lang.NumberFormatException
+2° error --> java.util.InputMismatchException
+- (pedirNumeroEntero)
+ Arroja java.lang.NumberFormatException sin ni siquiera ingresar un número debido al nextInt() previo. 
+Debe limpiarse el buffer o queda el espacio del enter previo
